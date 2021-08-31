@@ -152,9 +152,9 @@ This document uses several typographic conventions~(\autoref{tab:typographic-con
 
 \item[field separator:]
   One or more horizontal whitespace characters (space or tab).
-  The \textbf{field} separator must match the \ac{regex}~\texttt{[ {\textbackslash}t]+}.
-  The \textbf{field} separator can vary throughout the \textbf{file}.
-  Some capabilities of the \ac{BED} format, however, are available only when a single tab is used as the \textbf{field} separator throughout the \textbf{file}.
+  The \textbf{field separator} must match the \ac{regex}~\texttt{[ {\textbackslash}t]+}.
+  The \textbf{field separator} can vary throughout the \textbf{file}.
+  Some capabilities of the \ac{BED} format, however, are available only when a single tab is used as the \textbf{field separator} throughout the \textbf{file}.
 
 \item[file:]
   Sequence of one or more~\textbf{line}s.
@@ -266,7 +266,7 @@ The positions in \textbf{\acs{BED} field}s are all described in the~\textbf{0-ba
   \textsf{name} must be~1 to 255~non-tab characters.
   \textsf{name} must not contain whitespace, unless the only \textbf{field separator} is a single tab.
   Multiple \textbf{data line}s may share the same \textsf{name}.
-  In \textbf{BED5+} \textbf{file}s where all \textbf{features} have uninformative \textsf{name}s, dot~(\texttt{.}) may be used as a \textsf{name} on every \textbf{data line}.
+  In \textbf{BED5+} \textbf{file}s where all \textbf{feature}s have uninformative \textsf{name}s, dot~(\texttt{.}) may be used as a \textsf{name} on every \textbf{data line}.
   A visual representation of the \ac{BED} format may display \textsf{name} next to the~\textbf{feature}.
 
 \item \textsf{score}: Integer between~0 and~1000, inclusive.
@@ -456,9 +456,9 @@ This specification does not contain a means for interchanging this information.
 Information that must be supplied out-of-band include:
 
 \begin{itemize}[noitemsep]
-    \item Which of the first~4 to 12~\textbf{fields} are standard \textbf{\acs{BED} field}s and which are \textbf{custom field}s.
+    \item Which of the first~4 to 12~\textbf{field}s are standard \textbf{\acs{BED} field}s and which are \textbf{custom field}s.
     \item The genome assembly that defines \textsf{chrom}, \textsf{chromStart}, and \textsf{chromEnd}.
-    \item The semantics of \textbf{fields} such as \textsf{score}, \textsf{itemRgb}, thick vs.~thin positions, and block vs.~non-block positions.
+    \item The semantics of \textbf{field}s such as \textsf{score}, \textsf{itemRgb}, thick vs.~thin positions, and block vs.~non-block positions.
     \item The definitions of \textbf{custom field}s.
     \item Whether the \textbf{field separator} is a single tab character.
 \end{itemize}
