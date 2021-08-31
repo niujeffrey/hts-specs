@@ -115,11 +115,11 @@ This document uses several typographic conventions~(\autoref{tab:typographic-con
   For example, \textbf{BED3}~means a~\textbf{file} with only the first 3~\textbf{field}s; \textbf{BED12}~means a~\textbf{file} with all 12~\textbf{field}s.
 
 \item[\acs{BED}$n$+:]
-  A~\textbf{file} that has the first $n$~\textbf{field}s of the \ac{BED} format, followed by any number of~\textbf{field}s of custom data defined by a user.
+  A~\textbf{file} that has the first $n$~\textbf{field}s of the \ac{BED} format, followed by any number of~\textbf{field}s of custom data defined by the \textbf{file}~creator.
 
 \item[\acs{BED}$n$+$m$:]
-  A~\textbf{file} that has a custom format starting with the first $n$~\textbf{field}s of the \ac{BED} format, followed by $m$~\textbf{field}s of custom data defined by a user.
-  For example, \textbf{BED6+4}~means a~\textbf{file} with the first 6~\textbf{field}s of the \ac{BED} format, followed by 4~user-defined~\textbf{field}s.
+  A~\textbf{file} that has a custom format starting with the first $n$~\textbf{field}s of the \ac{BED} format, followed by $m$~\textbf{field}s of custom data defined by the \textbf{file}~creator.
+  For example, \textbf{BED6+4}~means a~\textbf{file} with the first 6~\textbf{field}s of the \ac{BED} format, followed by 4~custom~\textbf{field}s.
 
 \item[block:]
   Linear subfeatures within a~\textbf{feature}.
@@ -371,9 +371,9 @@ The last~\textbf{block} ends at~\textsf{chromEnd} since the last~\textbf{block} 
 
 \end{itemize}
 
-\subsection{User-defined fields}
+\subsection{Custom fields}
 
-Custom data \textbf{fields} may contain any printable 7-bit US \ac{ASCII} character (which includes spaces, but excludes tabs, newlines, and other control characters).
+Custom data \textbf{fields} defined by the \textbf{file}~creator may contain any printable 7-bit US \ac{ASCII} character (which includes spaces, but excludes tabs, newlines, and other control characters).
 Custom data \textbf{fields} can only be empty when a single tab is used as the \textbf{field separator} throughout the \textbf{file}.
 Definitions of a custom \ac{BED} format should restrict the type of each \textbf{field} to the extent possible.
 Each custom \textbf{field} should contain either one of several specified data types~(\autoref{tab:custom-data-types}) or a comma-separated list of values of any type other than String.
