@@ -120,7 +120,8 @@ This document uses several typographic conventions~(\autoref{tab:typographic-con
   For example, \textbf{BED3}~means a~\textbf{file} with only the first 3~\textbf{\acs{BED} field}s; \textbf{BED12}~means a~\textbf{file} with all 12~\textbf{\acs{BED} field}s.
 
 \item[\acs{BED}$n$+:]
-  A~\textbf{file} that has the first $n$~\textbf{\acs{BED} field}s, followed by any number of~\textbf{custom field}s.
+  A~\textbf{file} that has at least the first $n$~\textbf{\acs{BED} field}s, followed by zero or more of the remaining~\textbf{\acs{BED} field}s and zero or more~\textbf{custom field}s.
+  A~\acs{BED}$n$ \textbf{file} also satisfies the definition of a \acs{BED}$n$+ \textbf{file}.
 
 \item[\acs{BED}$n$+$m$:]
   A~\textbf{file} that has a custom format starting with the first $n$~\textbf{field}s of the \ac{BED} format, followed by $m$~\textbf{custom field}.
