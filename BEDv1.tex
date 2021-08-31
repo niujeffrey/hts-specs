@@ -321,6 +321,12 @@ The positions in \ac{BED}~\textbf{field}s are all described in the~\textbf{0-bas
   \textsf{blockStarts}~is mandatory in~\textbf{BED12+} \textbf{file}s.
 \end{enumerate}
 
+\subsection{Custom fields}
+
+Custom data \textbf{fields} defined by the \textbf{file}~creator may contain any printable 7-bit US \ac{ASCII} character (which includes spaces, but excludes tabs, newlines, and other control characters).
+Custom data \textbf{fields} can only be empty when a single tab is used as the \textbf{field separator} throughout the \textbf{file}.
+This specification does not contain a means for interchanging custom \ac{BED} format definitions.
+
 \section{Examples}
 
 \subsection[title]{Example BED6 file from the \acs{UCSC} Genome Browser FAQ\footnote{``Frequently
@@ -373,8 +379,6 @@ The last~\textbf{block} ends at~\textsf{chromEnd} since the last~\textbf{block} 
 
 \subsection{Custom fields}
 
-Custom data \textbf{fields} defined by the \textbf{file}~creator may contain any printable 7-bit US \ac{ASCII} character (which includes spaces, but excludes tabs, newlines, and other control characters).
-Custom data \textbf{fields} can only be empty when a single tab is used as the \textbf{field separator} throughout the \textbf{file}.
 Definitions of a custom \ac{BED} format should restrict the type of each \textbf{field} to the extent possible.
 Each custom \textbf{field} should contain either one of several specified data types~(\autoref{tab:custom-data-types}) or a comma-separated list of values of any type other than String.
 
@@ -396,7 +400,6 @@ Each custom \textbf{field} should contain either one of several specified data t
   \end{table}
 \end{savenotes}
 
-This specification does not contain a means for interchanging custom \ac{BED} format definitions.
 The AutoSQL format\footnote{Kent, W.~James.
   (2000) ``AutoSQL.''
   \url{https://hgwdev.gi.ucsc.edu/~kent/exe/doc/autoSql.doc}} provides one method for defining custom \ac{BED} formats in a separate file.
